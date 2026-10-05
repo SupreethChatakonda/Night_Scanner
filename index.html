@@ -19,7 +19,6 @@
         #lightbox p { max-width: 800px; margin: 15px auto; color: #ddd; }
         #lightbox .close { position: absolute; top: 15px; right: 25px; font-size: 30px; color: white; cursor: pointer; }
         .isro-links a { display: inline-block; margin: 10px; color: #7fd4ff; }
-        #eyes-frame { width: 95%; max-width: 1200px; height: 75vh; border: none; border-radius: 10px; box-shadow: 0 4px 15px rgba(255,255,255,0.2); }
     </style>
 </head>
 <body>
@@ -38,12 +37,13 @@
         <div id="gallery-grid"></div>
     </section>
 
-    <section id="solar-system">
-        <h2>🪐 NASA Eyes on the Solar System</h2>
-        <p style="color:#bbb">Explore a live 3D model of the planets, moons, and spacecraft — right here, or
-            <a href="https://eyes.nasa.gov/apps/solar-system/#/home" target="_blank" rel="noopener" style="color:#7fd4ff">open it full-screen</a>.
+    <section id="explore">
+        <h2>🌌 Explore</h2>
+        <p style="color:#bbb">Interactive NASA experiences:</p>
+        <p class="isro-links">
+            <a href="explore.html#solar-system">🪐 NASA Eyes on the Solar System</a>
+            <a href="explore.html#hubble-birthday">🎂 What Did Hubble See on Your Birthday?</a>
         </p>
-        <iframe id="eyes-frame" src="https://eyes.nasa.gov/apps/solar-system/#/home" title="NASA Eyes on the Solar System"></iframe>
     </section>
 
     <section id="isro-gallery">
@@ -61,6 +61,7 @@
         <p id="lightbox-caption"></p>
     </div>
 
+    <!-- This script fetches the live data from NASA -->
     <script src="app.js"></script>
 </body>
 </html>
