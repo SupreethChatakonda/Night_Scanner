@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Explore - My Cosmic Dashboard</title>
+    <style>
+        body { background-color: #0b0b1a; color: white; font-family: sans-serif; text-align: center; }
+        section { margin: 40px 0; }
+        a.back, a.open-full { color: #7fd4ff; }
+        .app-frame { width: 95%; max-width: 1200px; height: 75vh; border: none; border-radius: 10px; box-shadow: 0 4px 15px rgba(255,255,255,0.2); }
+        p.hint { color: #bbb; }
+    </style>
+</head>
+<body>
+    <p><a class="back" href="index.html">&larr; Back to Daily Space Hub</a></p>
+
+    <section id="solar-system">
+        <h1>🪐 NASA Eyes on the Solar System</h1>
+        <p class="hint">Fly between the planets, moons, and spacecraft in this live 3D model.
+            <a class="open-full" href="https://eyes.nasa.gov/apps/solar-system/#/home" target="_blank" rel="noopener">Open full-screen</a>
+        </p>
+        <iframe class="app-frame" src="https://eyes.nasa.gov/apps/solar-system/#/home" title="NASA Eyes on the Solar System"></iframe>
+    </section>
+
+    <section id="hubble-birthday">
+        <h1>🎂 What Did Hubble See on Your Birthday?</h1>
+        <p class="hint">Pick a date to see the image Hubble captured on that day in history.
+            <a class="open-full" href="https://science.nasa.gov/specials/apps/what-did-hubble-see-on-your-birthday/" target="_blank" rel="noopener">Open full-screen</a>
+        </p>
+        <iframe class="app-frame" src="https://science.nasa.gov/specials/apps/what-did-hubble-see-on-your-birthday/" title="What Did Hubble See on Your Birthday?"></iframe>
+    </section>
+</body>
+</html>
